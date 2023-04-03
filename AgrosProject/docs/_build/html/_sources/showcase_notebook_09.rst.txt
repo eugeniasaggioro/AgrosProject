@@ -1,7 +1,0 @@
-Showcase Notebook
-=================
-
-.. toctree::
-   :maxdepth: 1
-   
-   ../showcase_notebook_09.ipynb
