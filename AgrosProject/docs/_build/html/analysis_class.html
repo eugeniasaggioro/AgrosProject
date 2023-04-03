@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>analysis_class module &mdash; Agros Project 0.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="function" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Agros Project
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">function</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">analysis_class module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Agros Project</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">function</a> &raquo;</li>
+        
+      <li>analysis_class module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/analysis_class.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="module-analysis_class">
+<span id="analysis-class-module"></span><h1>analysis_class module<a class="headerlink" href="#module-analysis_class" title="Permalink to this headline">¶</a></h1>
+<p>This module contains classes and methods for data analysis.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="analysis_class.Analysis">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">analysis_class.</span></span><span class="sig-name descname"><span class="pre">Analysis</span></span><a class="headerlink" href="#analysis_class.Analysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to read the Agriculture Total Factor Productivity (USDA) Dataset and
+perform the analysis by reading the dataset as a pandas dataframe.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="analysis_class.Analysis.None">
+<span class="sig-name descname"><span class="pre">None</span></span><a class="headerlink" href="#analysis_class.Analysis.None" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis_class.Analysis.download_save_data">
+<span class="sig-name descname"><span class="pre">download_save_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#analysis_class.Analysis.download_save_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Downloads the agriculture data from a remote CSV file and saves it to a local
+file in a “downloads” directory. Perform some data cleaning by removing aggregates
+such as continents, regions and income classes from the list of entities.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis_class.Analysis.countries_list">
+<span class="sig-name descname"><span class="pre">countries_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#analysis_class.Analysis.countries_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints the list of countries in the dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis_class.Analysis.plot_quantity_correlations">
+<span class="sig-name descname"><span class="pre">plot_quantity_correlations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#analysis_class.Analysis.plot_quantity_correlations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a correlation matrix of the columns in the agriculture data that end with “_quantity”.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis_class.Analysis.plot_output_area">
+<span class="sig-name descname"><span class="pre">plot_output_area</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#analysis_class.Analysis.plot_output_area" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots an area chart of crop, animal, and fish output quantities over time for
+a given geographical area.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis_class.Analysis.compare_output_for_countries">
+<span class="sig-name descname"><span class="pre">compare_output_for_countries</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#analysis_class.Analysis.compare_output_for_countries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare the total output of crop, animal, and fish for the specified countries over time.
+Plot a line graph to visualize the comparison.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis_class.Analysis.gapminder">
+<span class="sig-name descname"><span class="pre">gapminder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#analysis_class.Analysis.gapminder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a scatter plot of fertilizer quantity vs. output quantity, with bubble sizes
+representing irrigation quantity. The plot is colored based on agricultural land quantity.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis_class.Analysis.choropleth">
+<span class="sig-name descname"><span class="pre">choropleth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#analysis_class.Analysis.choropleth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a choropleth map of Total Factor Productivity (tfp) for the countries present
+both in the geopandas dataframe and in the Agricultural Dataset for years before 2019.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="analysis_class.Analysis.predict_tfp">
+<span class="sig-name descname"><span class="pre">predict_tfp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#analysis_class.Analysis.predict_tfp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the Total Factor Productivity data for the specified countries and their
+ARIMA predictions up to 2050.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">choropleth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">year</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a choropleth map of Total Factor Productivity (tfp) for the countries present
+both in the geopandas dataframe and in the Agricultural Dataset for years before 2019.
+The plot is colored using a colorbar.</p>
+<dl class="simple">
+<dt>year: integer</dt><dd><p>An integer number that specifies the year to plot the values</p>
+</dd>
+</dl>
+<p>Nothing</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">compare_output_for_countries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">countries</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare the total output of crop, animal, and fish for the specified countries over time.
+Plot a line graph to visualize the comparison.</p>
+<dl class="simple">
+<dt>countries: str or List[str]</dt><dd><p>A string or a list of strings containing the names of countries to compare.</p>
+</dd>
+</dl>
+<p>Nothing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">countries_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of all unique countries in the agriculture data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">download_save_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Downloads a CSV file from a specified URL and saves it to a local directory.
+If the file exists in the local directory, it reads the file into a pandas dataframe.
+Perform some data cleaning by removing aggregates such as continents, regions and
+income classes from the list of entities.</p>
+<p>Nothing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">gapminder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">year</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_scale</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a scatter plot of fertilizer quantity vs. output quantity, with bubble sizes
+representing irrigation quantity. The plot is colored based on agricultural land quantity.</p>
+<dl class="simple">
+<dt>year: integer</dt><dd><p>An integer number that specifies the year to plot the values</p>
+</dd>
+<dt>log_scale: boolean</dt><dd><p>A Boolean indicating whether the displayed values will be transformed
+with a logarithm or not.</p>
+</dd>
+</dl>
+<p>Nothing</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">plot_output_area</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots an area chart of crop, animal, and fish output quantities over time for
+a given geographical area.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<em>class</em>) – The Analysis class itself</p></li>
+<li><p><strong>entity</strong> (<em>str</em>) – Name of the entity to plot, e.g. “United States”. When receiving None or “World”,
+it plots the World’s total output.</p></li>
+<li><p><strong>normalize</strong> (<em>bool</em>) – If equal to True, it normalizes the output values in relative terms.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Nothing.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">plot_quantity_correlations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a correlation matrix of the columns in the agriculture data that end with “_quantity”.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">predict_tfp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">countries</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id7" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the TFP data for the specified countries and their ARIMA predictions up to 2050.</p>
+<dl class="simple">
+<dt>countries: List[str]</dt><dd><p>A list of up to three countries to plot.</p>
+</dd>
+</dl>
+<p>Nothing</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="modules.html" class="btn btn-neutral float-left" title="function" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, M. Baglieri Occhipinti, K. Nguyen, R. Geneletti, E. Saggioro
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
